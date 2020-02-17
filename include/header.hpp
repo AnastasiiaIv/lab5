@@ -3,7 +3,6 @@
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 #define STACK_UNDERFLOW -2
-
 #include <cstdlib>
 #include <iostream>
 #include <new>
