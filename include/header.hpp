@@ -29,10 +29,7 @@ public:
 
     template <typename ... Args>
     void push_emplace(Args &&... value) {
-        for (auto t : std::initializer_list<T>{ value... })
-        {
-            push(t);
-        }
+        push(std::forward<Args>(value)...);
    }
 
     void push(T&& value) {
